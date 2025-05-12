@@ -6,7 +6,9 @@ import ImageComponent from "./components/ImageComponent";
 function App() {
   return (
     <>
-      <NavbarComponent />
+      <header>
+        <NavbarComponent />
+      </header>
 
       <h1 style={{ textAlign: "center", marginTop: "20px" }}>Benvenuto nel mio sito!</h1>
 
@@ -33,11 +35,11 @@ function App() {
 
         <ButtonComponent
           text="Clicca qui!"
-          className="btn btn-success"
+          className="btn"
           style={{
             padding: "10px 20px",
             fontSize: "16px",
-            backgroundColor: "lightblue",
+            backgroundColor: "#F2C873",
           }}
         />
       </div>

@@ -1,11 +1,6 @@
-import { Component } from "react";
-
-class ImageComponent extends Component {
-  render() {
-    const { src, alt, style, className } = this.props;
-
-    return <img src={src} alt={alt} style={style} className={className} />;
-  }
-}
+const ImageComponent = function (props) {
+  console.log("PROPS ImageComponent", props);
+  return <img src={props.src} alt={props.alt} style={props.style} className={props.className} />;
+};
 
 export default ImageComponent;
